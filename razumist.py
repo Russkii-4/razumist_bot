@@ -19,7 +19,7 @@ from aiogram.utils.markdown import escape_md
 
 
 logging.basicConfig(level=logging.INFO)
-bot: Bot = Bot(token="")
+bot: Bot = Bot(token="1548967936:AAGqYm37VMDR2B2WdxUk1NcuJLjoEkLH6cc")
 dp: Dispatcher = Dispatcher(bot=bot, storage=MemoryStorage())
 
 
