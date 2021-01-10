@@ -84,7 +84,7 @@ async def cmd_mute(message: types.Message):
     until_date = max(time.time() + 60, parse(args))
     await bot.restrict_chat_member(message.chat.id, reply.from_user.id, until_date=until_date)
     await message.reply(
-        f"*{reply.from_user.full_name}* помещён в карантин на `{datetime.fromtimestamp(until_date)}`.", 
+        f"*{reply.from_user.full_name}* помещён в карантин до `{datetime.fromtimestamp(until_date)}`.", 
         parse_mode=types.ParseMode.MARKDOWN
     )
 
