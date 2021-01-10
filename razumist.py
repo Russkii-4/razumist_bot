@@ -191,7 +191,7 @@ if __name__ == "__main__":
     start_polling(
         relax=0.4,
         dispatcher=dp,
-        skip_updates=False,
+        skip_updates=True,
         on_shutdown=on_shutdown
      )
 
