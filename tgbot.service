@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram Bot
+After=network.target
+
+[Service]
+User=kita
+Group=kita
+
+WorkingDirectory=/home/kita/razumist_bot/
+Environment="PYTHONPATH=/home/kita/razumist_bot/"
+ExecStart=/home/kita/razumist_bot/.venv/bin/python /home/kita/razumist_bot/razumist.py
+
+[Install]
+WantedBy=multi-user.target
